@@ -17,8 +17,6 @@ RUN curl -OL https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-lin
     mv phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/phantomjs && \
     apt-get install -y libfontconfig
 
-#EXPOSE 9000
-#CMD ["php-fpm"]
-
+# Run GhostDriver
 EXPOSE 8643
 CMD ["phantomjs", "--webdriver=8643"]
