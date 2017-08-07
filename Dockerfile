@@ -18,5 +18,4 @@ RUN curl -OL https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-lin
     apt-get install -y libfontconfig
 
 # Run GhostDriver
-EXPOSE 8643
 CMD ["phantomjs", "--webdriver=8643"]
